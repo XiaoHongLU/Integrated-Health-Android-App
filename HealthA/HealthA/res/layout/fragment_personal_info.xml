@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/weight_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/name_info"
+        android:layout_marginTop="20dp"
+        android:text="Weight:" />
+
+    <TextView
+        android:id="@+id/height_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/weight_info"
+        android:layout_marginTop="20dp"
+        android:text="Height" />
+
+    <TextView
+        android:id="@+id/bmi_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/height_info"
+        android:layout_marginTop="20dp"
+        android:text="BMI:" />
+
+    <TextView
+        android:id="@+id/step_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bmi_info"
+        android:layout_marginTop="20dp"
+        android:text="Total Step Count:" />
+
+    <TextView
+        android:id="@+id/heart_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/step_info"
+        android:layout_marginTop="20dp"
+        android:text="Heart Race:" />
+
+    <Button
+        android:id="@+id/showcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heart_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:text="start" />
+
+    <TextView
+        android:id="@+id/weight_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weight_info"
+        android:layout_alignRight="@+id/showcase"
+        android:layout_toRightOf="@+id/heart_info"/>
+
+    <TextView
+        android:id="@+id/name_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name_info"
+        android:layout_alignLeft="@+id/weight_data"
+        android:layout_alignRight="@+id/weight_data"/>
+
+    <TextView
+        android:id="@+id/height_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/height_info"
+        android:layout_alignBottom="@+id/height_info"
+        android:layout_alignLeft="@+id/weight_data"
+        android:layout_alignRight="@+id/weight_data"/>
+
+    <TextView
+        android:id="@+id/bmi_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bmi_info"
+        android:layout_alignRight="@+id/height_data"
+        android:layout_toRightOf="@+id/heart_info"/>
+
+    <TextView
+        android:id="@+id/step_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/step_info"
+        android:layout_alignLeft="@+id/showcase"/>
+
+    <TextView
+        android:id="@+id/heart_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/showcase"
+        android:layout_alignRight="@+id/step_data"/>
+
+</RelativeLayout>

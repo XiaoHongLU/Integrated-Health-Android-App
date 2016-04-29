@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="96dp"
+        android:text="Weight:" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkedTextView1"
+        android:layout_marginTop="15dp"
+        android:text="Height:" />
+
+    <Button
+        android:id="@+id/showcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkedTextView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:text="Sumbit" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/checkedTextView2"
+        android:layout_below="@+id/checkedTextView2"
+        android:layout_marginTop="15dp"
+        android:text="BMI:" />
+
+    <TextView
+        android:id="@+id/bmi_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkedTextView3"
+        android:layout_alignBottom="@+id/checkedTextView3"
+        android:layout_toRightOf="@+id/checkedTextView1"
+        android:ems="10"
+        android:inputType="numberDecimal" 
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/height_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bmi_output"
+        android:layout_below="@+id/checkedTextView1"
+        android:ems="10"
+        android:inputType="numberDecimal" 
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/height_input"
+        android:layout_alignLeft="@+id/height_input"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
